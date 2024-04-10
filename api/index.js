@@ -8,7 +8,7 @@ app.use(cors());
 
 var CONNECTION_STRING = "mongodb://localhost:27017";
 
-var DATABASENAME = "usernameandpassword";
+var DATABASENAME = "username&password";
 var database;
 
 app.listen(27017, ()  => {
