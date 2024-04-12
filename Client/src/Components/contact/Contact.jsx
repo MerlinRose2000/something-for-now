@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Submitbutton from "./submitbutton/Submitbutton";
+import Submitbutton from "../submitbutton/Submitbutton";
 import { useState } from "react";
 //import emailjs from "emailjs-com";
-import "./Contact.css";
+//import "../contact/Contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
