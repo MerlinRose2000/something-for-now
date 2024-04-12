@@ -1,4 +1,4 @@
-import { useState } from "react";
+//import { useState } from "react";
 
 function Registration() {
     
@@ -56,4 +56,4 @@ function Registration() {
     );
 }
 
-export default App
+export default Registration
