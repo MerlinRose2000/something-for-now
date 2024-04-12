@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Registration from './Components/registration/RegistrationPage'
 
 function App() {
 
@@ -5,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Hello</h1>
+        <h1>Hello, welcome to something-for-now!</h1>
       </div>
     </>
   )
