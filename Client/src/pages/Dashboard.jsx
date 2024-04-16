@@ -1,4 +1,5 @@
 //import React from 'react'
+import './dashboard.scss'
 
 const Dashboard = () => {
   return (
@@ -6,7 +7,6 @@ const Dashboard = () => {
       <div className="username-box">
         <div>
           <h2 className="username-title">Username</h2>
-
           <div className="username-layout">
             <div className="username-titles"></div>
           </div>
