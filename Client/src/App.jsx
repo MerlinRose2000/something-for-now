@@ -8,13 +8,14 @@ import Contact from '../src/pages/Contact';
 import Dashboard from '../src/pages/Dashboard';
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast'
+import { UserContextProvider } from '../context/userContext';
 
 axios.defaults.baseURL = 'http://localhost:8000';
 axios.defaults.withCredentials = true
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <Navbar />
       <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
       <Routes>
@@ -24,7 +25,7 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
-    </>
+    </UserContextProvider>
   )
 }
 
