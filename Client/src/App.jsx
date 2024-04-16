@@ -4,6 +4,7 @@ import Navbar from '../src/components/Navbar';
 import Home from '../src/pages/Home';
 import Register from '../src/pages/Register';
 import Login from '../src/pages/Login';
+import Contact from '../src/pages/Contact';
 import axios from 'axios';
 
 axios.defaults.baseURL = 'http://localhost:6000';
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/contact' element={<Contact/>} />
       </Routes>
     </>
   )
