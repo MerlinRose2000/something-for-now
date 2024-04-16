@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #5e0d0d;
+  color: white;
+  font-size: 30px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

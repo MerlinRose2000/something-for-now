@@ -1,3 +1,4 @@
+import './index.css';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../src/components/Navbar';
@@ -17,7 +18,9 @@ function App() {
   return (
     
     <UserContextProvider>
-      <Navbar />
+      <div class='header'>
+        <Navbar />
+      </div>
       <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
       <Routes>
         <Route path='/' element={<Home />} />

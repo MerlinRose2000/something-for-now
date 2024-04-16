@@ -2,6 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import {toast} from 'react-hot-toast'
 import {useNavigate} from 'react-router-dom'
+import './login.scss'
 
 export default function Login() {
   const navigate = useNavigate()
@@ -32,10 +33,14 @@ const loginUser = async (e) => {
   return (
     <div>
       <form onSubmit={loginUser}>
-      <label>Email</label>
-        <input type='email' placeholder='enter email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
-        <label>Password</label>
-        <input type='password' placeholder='enter password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
+        <element class='login'>
+          <label>Email</label>
+          <input type='email' placeholder='enter email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
+        </element>
+        <element class='login'>
+          <label>Password</label>
+          <input type='password' placeholder='enter password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})} />
+        </element>
         <button type='submit'>Login</button>
       </form>
     </div>
