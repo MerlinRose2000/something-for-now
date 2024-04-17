@@ -1,0 +1,15 @@
+{
+  "name": "something-for-now",
+  "version": "1.0.0",
+  "description": "## Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "render-build": "server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "render-build": "^0.3.4"
+  }
+}
